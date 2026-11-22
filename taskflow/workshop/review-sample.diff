@@ -1,0 +1,42 @@
+diff --git a/src/main/java/com/taskflow/task/TaskService.java b/src/main/java/com/taskflow/task/TaskService.java
+--- a/src/main/java/com/taskflow/task/TaskService.java
++++ b/src/main/java/com/taskflow/task/TaskService.java
+@@ -31,7 +31,9 @@ public class TaskService {
+     @Transactional
+     public TaskResponse update(long id, TaskRequest request) {
+         Task task = find(id);
+         task.setTitle(request.title());
+-        task.setDescription(request.description());
++        if (request.description() != null && !request.description().isBlank()) {
++            task.setDescription(request.description());
++        }
+         return TaskResponse.from(task);
+     }
+diff --git a/src/test/java/com/taskflow/task/TaskServiceTest.java b/src/test/java/com/taskflow/task/TaskServiceTest.java
+new file mode 100644
+--- /dev/null
++++ b/src/test/java/com/taskflow/task/TaskServiceTest.java
+@@ -0,0 +1,23 @@
++package com.taskflow.task;
++
++import static org.junit.jupiter.api.Assertions.assertNotNull;
++import static org.mockito.ArgumentMatchers.any;
++import static org.mockito.Mockito.mock;
++import static org.mockito.Mockito.verify;
++import static org.mockito.Mockito.when;
++
++import org.junit.jupiter.api.Test;
++
++class TaskServiceTest {
++    @Test
++    void createsTask() {
++        TaskRepository repository = mock(TaskRepository.class);
++        when(repository.save(any(Task.class))).thenAnswer(invocation -> invocation.getArgument(0));
++        TaskService service = new TaskService(repository);
++
++        TaskResponse response = service.create(new TaskRequest("Zadanie", "Opis"));
++
++        assertNotNull(response);
++        verify(repository).save(any(Task.class));
++    }
++}

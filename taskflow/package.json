@@ -1,0 +1,11 @@
+{
+  "name": "taskflow-ui-tests",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "test:ui": "playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.65.1"
+  }
+}

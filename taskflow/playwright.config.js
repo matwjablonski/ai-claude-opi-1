@@ -1,0 +1,10 @@
+const { defineConfig } = require('@playwright/test');
+
+module.exports = defineConfig({
+  testDir: './e2e',
+  use: {
+    baseURL: process.env.TASKFLOW_BASE_URL || 'http://localhost:8080',
+    browserName: 'chromium',
+  },
+  reporter: 'list',
+});

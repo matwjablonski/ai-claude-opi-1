@@ -1,0 +1,10 @@
+target/
+.idea/
+.classpath
+.project
+.settings/
+*.iml
+data/
+node_modules/
+playwright-report/
+test-results/

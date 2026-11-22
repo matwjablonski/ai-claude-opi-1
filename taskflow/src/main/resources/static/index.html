@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TaskFlow</title>
+    <link rel="stylesheet" href="/styles.css">
+    <script src="/app.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <header>
+        <p class="eyebrow">Projekt zespołu</p>
+        <h1>TaskFlow</h1>
+        <p>Lista zadań i ich bieżący status</p>
+      </header>
+
+      <section aria-labelledby="form-heading" class="panel">
+        <h2 id="form-heading">Nowe zadanie</h2>
+        <form id="task-form">
+          <input type="hidden" id="task-id">
+          <label for="title">Tytuł</label>
+          <input id="title" name="title" required maxlength="255">
+          <label for="description">Opis</label>
+          <textarea id="description" name="description" rows="3" maxlength="2000"></textarea>
+          <div class="actions">
+            <button type="submit" id="save-button">Dodaj zadanie</button>
+            <button type="button" id="cancel-button" class="secondary" hidden>Anuluj edycję</button>
+          </div>
+        </form>
+      </section>
+
+      <section aria-labelledby="tasks-heading" class="panel">
+        <div class="section-heading">
+          <h2 id="tasks-heading">Zadania</h2>
+          <label for="status-filter">Pokaż
+            <select id="status-filter">
+              <option value="">Wszystkie</option>
+              <option value="TODO">Do zrobienia</option>
+              <option value="IN_PROGRESS">W toku</option>
+              <option value="DONE">Gotowe</option>
+            </select>
+          </label>
+        </div>
+        <p id="message" role="status" aria-live="polite"></p>
+        <ul id="task-list"></ul>
+      </section>
+    </main>
+  </body>
+</html>
