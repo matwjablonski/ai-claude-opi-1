@@ -1,11 +1,12 @@
 # Lektury uzupełniające do warsztatów Claude Code / TaskFlow
 
-Zestawienie odpowiada modułom prezentacji i ćwiczeniom z workbooka. Materiały są po angielsku. Zacznij od pozycji związanej z zadaniem, które chcesz pogłębić; nie trzeba czytać całej listy po kolei. Linki sprawdzone 24 listopada 2026 r.
+Zestawienie odpowiada modułom prezentacji i ćwiczeniom z workbooka. Większość materiałów jest po angielsku; artykuł Mateusza jest po polsku. Zacznij od pozycji związanej z zadaniem, które chcesz pogłębić; nie trzeba czytać całej listy po kolei. Linki sprawdzone 24 listopada 2026 r.
 
 ## 1. Poznanie projektu i instrukcje dla agenta
 
 - [Best practices for Claude Code — Anthropic](https://code.claude.com/docs/en/best-practices) — jak zaczynać od zrozumienia repozytorium, podawać kontekst i weryfikować wynik. Przydatne do zadań 1, 2 i 8.
 - [How Claude remembers your project — Anthropic](https://code.claude.com/docs/en/memory) — zakres i utrzymanie instrukcji `CLAUDE.md`; uzupełnienie zadania 1.
+- [Markdown. Skromny język, który napisał Internet — Mateusz Jabłoński](https://mateuszjablonski.com/blog/markdown-skromny-jezyk-ktory-napisal-internet) — po polsku o Markdownzie jako formacie dokumentacji, promptów i instrukcji dla agentów; pokazuje też granice takiego opisu. Do zadań 1 i 8A.
 
 ## 2. Zmiana kodu i agentic workflow
 
