@@ -9,7 +9,7 @@ Zestawienie odpowiada modułom prezentacji i ćwiczeniom z workbooka. Materiały
 
 ## 2. Zmiana kodu i agentic workflow
 
-- [Building effective agents — Anthropic](https://www.anthropic.com/research/building-effective-agents) — kiedy wystarcza prosty przepływ, a kiedy agent powinien sam wybierać kolejne działania. Kontekst dla zadań 2–3 i 8.
+- [Building effective agents — Anthropic](https://www.anthropic.com/research/building-effective-agents) — wzorce przepływów i agentów; materiał koncepcyjny do zadań 2–3 i 8, a nie instrukcja obsługi Claude Code.
 - [Humans and Agents in Software Engineering Loops — Martin Fowler](https://martinfowler.com/articles/exploring-gen-ai/humans-and-agents.html) — gdzie człowiek podejmuje decyzje i jak ocenia pracę agenta. Warto przeczytać przed planowaniem zadania 3A i specyfikacją 8A.
 
 ## 3. Kontekst, tokeny i koszty
@@ -31,5 +31,5 @@ Zestawienie odpowiada modułom prezentacji i ćwiczeniom z workbooka. Materiały
 
 ## 6. Kontrola jakości zmian
 
-- [Engineering Practices for LLM Application Development — Martin Fowler / Thoughtworks](https://martinfowler.com/articles/engineering-practices-llm.html) — testy, iteracja i świadoma ocena wyniku pracy z modelami; kontekst dla modułu 8.
-- [Best practices for Claude Code — Anthropic](https://code.claude.com/docs/en/best-practices) — wróć do części o przeglądzie zmian i sprawdzaniu działania po zadaniach 8B–8D.
+- [The role of developer skills in agentic coding — Martin Fowler / Thoughtworks](https://martinfowler.com/articles/exploring-gen-ai/13-role-of-developer-skills.html) — konkretne przykłady błędnych diagnoz, zbędnych zmian i ograniczeń testów tworzonych przez agenta; do zadań 8A–8D.
+- [Assessing internal quality while coding with an agent — Martin Fowler / Thoughtworks](https://martinfowler.com/articles/exploring-gen-ai/ccmenu-quality.html) — studium przypadku oceny jakości kodu po zmianie wykonanej z agentem; do przeglądu w zadaniach 8C–8D.
