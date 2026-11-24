@@ -13,6 +13,8 @@ Zestawienie odpowiada modułom prezentacji i ćwiczeniom z workbooka. Większoś
 - [Building effective agents — Anthropic](https://www.anthropic.com/research/building-effective-agents) — wzorce przepływów i agentów; materiał koncepcyjny do zadań 2–3 i 8, a nie instrukcja obsługi Claude Code.
 - [Humans and Agents in Software Engineering Loops — Martin Fowler](https://martinfowler.com/articles/exploring-gen-ai/humans-and-agents.html) — gdzie człowiek podejmuje decyzje i jak ocenia pracę agenta. Warto przeczytać przed planowaniem zadania 3A i specyfikacją 8A.
 - [First run the tests — Simon Willison](https://simonwillison.net/guides/agentic-engineering-patterns/first-run-the-tests/) — krótki wzorzec rozpoczęcia pracy agenta od uruchomienia testów i poznania repozytorium; do zadań 1, 2B i 8C.
+- [Characterization Testing — Michael Feathers](https://michaelfeathers.silvrback.com/characterization-testing) — tekst autora, który wprowadził pojęcie testów charakterystyki w książce Working Effectively with Legacy Code. Wyjaśnia, jak utrwalić faktyczne zachowanie przed zmianą i dlaczego nie oznacza to uznania go za poprawne; do zadań 2A–2B i 8D.
+- [Working Effectively With Characterization Tests — Alberto Savoia](https://www.artima.com/weblogs/viewpost.jsp?thread=198296) — pierwszy tekst z serii z 2007 r. z praktycznym przykładem w Javie i procedurą opartą na podejściu Feathersa; do zadań 2A–2B i 8D.
 
 ## 3. Kontekst, tokeny i koszty
 
