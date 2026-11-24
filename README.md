@@ -1,7 +1,8 @@
 # AI Driven development. Warsztaty Claude Code
 
 To repozytorium `ai-claude-opi-1` zawiera projekt warsztatowy TaskFlow i
-[workbook z zadaniami](./materials/workbook.pdf). Zacznij od
+[workbook z zadaniami](./materials/workbook.pdf) oraz
+[prezentację w PDF](./materials/ai-driven-development-warsztaty-claude-code.pdf). Zacznij od
 [`taskflow/`](./taskflow/). Projekt zawiera celowe luki i zachowania do zbadania
 podczas ćwiczeń; nie wszystkie są opisane w kodzie.
 
